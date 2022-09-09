@@ -30,3 +30,9 @@ hashmap.c:43:10: error: unused variable ‘new’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 201f607
+Fri 09 Sep 2022 05:02:41 PM UTC: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  1|5
+total_score: 10/70
+ec2a8cf
