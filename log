@@ -70,3 +70,18 @@ Fri 09 Sep 2022 05:18:17 PM UTC:
  tests:  5|4
 total_score: 30/70
 bbb8baa
+Fri 09 Sep 2022 05:25:27 PM UTC: 
+ hashmap.c | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+In file included from test.c:4:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:80:3: error: ‘cont’ undeclared (first use in this function)
+   80 |   cont = 0;
+      |   ^~~~
+hashmap.c:80:3: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:91:8: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   91 |     if(i = map->capacity) i=0;
+      |        ^
+cc1: all warnings being treated as errors
+Compilation failed
+2b68a0a
