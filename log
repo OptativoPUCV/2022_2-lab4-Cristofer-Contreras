@@ -8,3 +8,14 @@ Fri 09 Sep 2022 04:48:19 PM UTC:
  tests:  1|5
 total_score: 10/70
 8c255f3
+Fri 09 Sep 2022 05:02:20 PM UTC: 
+ hashmap.c | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:43:10: error: unused variable ‘new’ [-Werror=unused-variable]
+   43 |   Pair * new = createPair(key, value);
+      |          ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+d84b1d8
