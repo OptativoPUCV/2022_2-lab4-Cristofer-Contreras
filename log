@@ -85,3 +85,14 @@ hashmap.c:91:8: error: suggest parentheses around assignment used as truth value
 cc1: all warnings being treated as errors
 Compilation failed
 2b68a0a
+Fri 09 Sep 2022 05:25:41 PM UTC: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:80:3: error: ‘cont’ undeclared (first use in this function)
+   80 |   cont = 0;
+      |   ^~~~
+hashmap.c:80:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+d2647b9
