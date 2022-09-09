@@ -52,3 +52,15 @@ hashmap.c:46:42: error: invalid type argument of ‘->’ (have ‘long int’)
       |                                          ^~
 Compilation failed
 fe81b84
+Fri 09 Sep 2022 05:18:08 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:46:44: error: invalid operands to binary - (have ‘int’ and ‘char *’)
+   46 |     if(!map->buckets[i] || !map->buckets[i]-key){
+      |                            ~~~~~~~~~~~~~~~~^
+      |                            |
+      |                            int
+Compilation failed
+b3651f7
