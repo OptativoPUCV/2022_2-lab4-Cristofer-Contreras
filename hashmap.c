@@ -70,8 +70,12 @@ HashMap * createMap(long capacity) {
   return newMapa;
 }
 
-void eraseMap(HashMap * map,  char * key) {    
-
+void eraseMap(HashMap * map,  char * key) {
+  Pair *erasePair = searchMap(map,key);
+  if(erasePair){
+  erasePair->key = NULL;
+  map->size--;
+  }
 
 }
 
