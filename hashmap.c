@@ -100,8 +100,15 @@ Pair * searchMap(HashMap * map,  char * key) {
 }
 
 Pair * firstMap(HashMap * map) {
+  size_t i = map->current+1;
 
-  return NULL;
+  while(!map->current[i]){
+    i++;
+    i == map->capacity;
+  }
+  if(map->buckets[0]->key != NULL) i=0;
+  map->current = i;
+  return map->buckets[i]->value;
 }
 
 Pair * nextMap(HashMap * map) {
