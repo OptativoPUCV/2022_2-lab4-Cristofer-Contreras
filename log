@@ -132,3 +132,9 @@ hashmap.c:105:22: error: subscripted value is neither array nor pointer nor vect
       |                      ^
 Compilation failed
 c46a724
+Sun 11 Sep 2022 03:25:49 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  11|2
+total_score: 50/70
+5228aa5
