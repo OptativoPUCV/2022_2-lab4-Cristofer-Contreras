@@ -307,3 +307,9 @@ hashmap.c:68:42: error: ‘oldBcukets’ undeclared (first use in this function)
       |                                          oldBuckets
 Compilation failed
 63e57c8
+Sun 11 Sep 2022 04:39:39 AM UTC: 
+ hashmap.c | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+ tests:  17|0
+total_score: 70/70
+4844102
