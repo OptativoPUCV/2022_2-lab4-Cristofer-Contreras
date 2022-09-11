@@ -100,7 +100,7 @@ Pair * searchMap(HashMap * map,  char * key) {
 }
 
 Pair * firstMap(HashMap * map) {
-  size_t i = map->current+1;
+  long i = map->current + 1;
 
   while(!map->buckets[i]){
     i++;
