@@ -171,3 +171,14 @@ Sun 11 Sep 2022 03:45:15 AM UTC:
  tests:  11|2
 total_score: 50/70
 37fcfee
+Sun 11 Sep 2022 03:49:41 AM UTC: 
+ hashmap.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+In file included from test.c:4:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:106:47: error: ‘*map->buckets’ is a pointer; did you mean to use ‘->’?
+  106 |     if(map->buckets[i] != NULL && map->buckets->key != NULL){
+      |                                               ^~
+      |                                               ->
+Compilation failed
+8d6e96d
