@@ -228,3 +228,33 @@ hashmap.c:67:42: error: ‘oldBcukets’ undeclared (first use in this function)
 cc1: all warnings being treated as errors
 Compilation failed
 6d8526f
+Sun 11 Sep 2022 04:22:25 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:59:3: error: unknown type name ‘pair’; did you mean ‘Pair’?
+   59 |   pair ** oldBuckets = map->buckets;
+      |   ^~~~
+      |   Pair
+hashmap.c:59:24: error: initialization of ‘int **’ from incompatible pointer type ‘Pair **’ [-Werror=incompatible-pointer-types]
+   59 |   pair ** oldBuckets = map->buckets;
+      |                        ^~~
+hashmap.c:62:19: error: ‘pair’ undeclared (first use in this function); did you mean ‘Pair’?
+   62 |   map->buckets = (pair **)calloc(map->capacity,sizeof(pair*));
+      |                   ^~~~
+      |                   Pair
+hashmap.c:62:19: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:62:26: error: expected expression before ‘)’ token
+   62 |   map->buckets = (pair **)calloc(map->capacity,sizeof(pair*));
+      |                          ^
+hashmap.c:67:35: error: request for member ‘key’ in something not a structure or union
+   67 |       insertMap(map, oldBuckets[i]->key, oldBcukets[i]->value);
+      |                                   ^~
+hashmap.c:67:42: error: ‘oldBcukets’ undeclared (first use in this function); did you mean ‘oldBuckets’?
+   67 |       insertMap(map, oldBuckets[i]->key, oldBcukets[i]->value);
+      |                                          ^~~~~~~~~~
+      |                                          oldBuckets
+cc1: all warnings being treated as errors
+Compilation failed
+8c7578b
