@@ -104,7 +104,7 @@ Pair * firstMap(HashMap * map) {
 
   while(!map->current[i]){
     i++;
-    i == map->capacity;
+    i %= map->capacity;
   }
   if(map->buckets[0]->key != NULL) i=0;
   map->current = i;
