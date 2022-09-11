@@ -288,3 +288,22 @@ hashmap.c:68:42: error: ‘oldBcukets’ undeclared (first use in this function)
 cc1: all warnings being treated as errors
 Compilation failed
 c424963
+Sun 11 Sep 2022 04:37:05 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:64:19: error: ‘pair’ undeclared (first use in this function); did you mean ‘Pair’?
+   64 |   map->buckets = (pair**)calloc(map->capacity,sizeof(pair*));
+      |                   ^~~~
+      |                   Pair
+hashmap.c:64:19: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:64:25: error: expected expression before ‘)’ token
+   64 |   map->buckets = (pair**)calloc(map->capacity,sizeof(pair*));
+      |                         ^
+hashmap.c:68:42: error: ‘oldBcukets’ undeclared (first use in this function); did you mean ‘oldBuckets’?
+   68 |       insertMap(map, oldBuckets[i]->key, oldBcukets[i]->value);
+      |                                          ^~~~~~~~~~
+      |                                          oldBuckets
+Compilation failed
+63e57c8
